@@ -460,7 +460,35 @@ address{
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
                 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+/* overlay */
 
+.thumb{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(0);
+}
+.link:hover .overlay,
+.link:focus .overlay{
+    transform: translateY(-100%);
+}
+.overlay-text{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 00.03em;
+
+    color: var(--thirdly-text-color);
+}
 /* Приклади робіт */
 .examples{
     display: flex;
