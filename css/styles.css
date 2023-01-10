@@ -309,6 +309,8 @@ nav{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+    width: 270px;
+    height: 428px
 }
 
 .team-card{
@@ -591,3 +593,68 @@ address{
     border-right: 5px solid var(--card-border-line);
     border-bottom: 5px solid var(--card-border-line);
   }
+
+  .modalwindow{
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+    margin-bottom: 10px;
+  }
+  .modalwindow:hover{
+    border-color: #2196F3;
+
+  }
+  .modaltext{
+    width: 22px;
+    height: 14px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+
+    margin-left: 40px;
+}
+.modalname{
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+.comtext{
+    width: 448px;
+    height: 120px;
+
+    margin-top: 4px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modalagree{
+    position: absolute;
+
+    left: 0;
+
+    margin-top: 25px;
+    margin-right: 8.38px;
+    margin-left: 52px;
+}
+.agreetext{
+    margin-top: 25px;
+}
+.argument{
+    color: #2196F3;
+}
+.modalicons{
+    position: absolute;
+
+    margin-top: 14px;
+    margin-left: 15px;
+    margin-bottom: 14px;
+}
