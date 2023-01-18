@@ -74,11 +74,11 @@ img {
     padding-bottom: 25px;
 }
 
-.container.nav{
+.container.header__navigation{
     display: flex;
     align-items: center;
 }
-.logo{
+.header__logo{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -86,27 +86,29 @@ img {
     line-height: 31px;
     letter-spacing: 0.03em;
 
+    margin-right: 25px;
+    
     color: var(--primary-text-color);
 }
-.logo span{
+.header__logo span{
     color: var(--accent-color);
 }
 
-nav{
+.header__navigation{
     margin-left: 93px;
 }
 
-.nav-list{
+.navigation__list{
     display: flex;
 }
-.nav-item:not(:first-child){
+.navigation__item:not(:first-child){
     margin-left: 54px;
 }
 /* .nav-item:first-child{
     margin-left: 0;
 } */
-.nav-link,
-.contact-link{
+.navigation__link,
+.contacts__link{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -117,35 +119,35 @@ nav{
     
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-icon{
+.contacts__icon{
     margin-right: 10px;
     fill: currentColor;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus{
+.header__navigation-link:hover,
+.header__navigation-link:focus,
+.contacts__link:hover,
+.contacts__link:focus{
     color: var(--accent-color);
 }
 
-.contacts-list{
+.contacts{
     display: flex;
     margin-left: auto;
 }
 
-.contact-item:not(:first-child){
+.contacts__item:not(:first-child){
     margin-left: 50px;
 }
 /* .contact-item:nth-child(2){
     margin-left: 50px;
 } */
-.contact-link{
+.contacts__link{
     color: var(--secondary-text-color);
 }
 
 /* Секція герой */
-.section.hero{
+.section.main{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -156,11 +158,11 @@ nav{
                     url(../img/bgi.jpg);
     background-position: center;
 }
-.section.hero,
+.section.main,
 .section.footer{
     background-color: var(--background-color);
 }
-.hero-title{
+.main__text{
     width: 696px;
 
     margin-left: auto;
@@ -178,7 +180,7 @@ nav{
     color: var(--thirdly-text-color);
 }
 
-.hero-button{
+.main__button{
     display: inline-flex;
     background-color: var(--accent-color);
     color: var(--thirdly-text-color);
@@ -204,8 +206,8 @@ nav{
     transition-delay: 1000ms; */
 }
 
-.hero-button:hover,
-.hero-button:focus{
+.main__button:hover,
+.main__button:focus{
     background-color: aquamarine;
     color: #2F303A;
 
@@ -266,44 +268,44 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.fetures-item{
+.fetures__item{
     width: 270px;
 }
 
-.icon-box{
+.boxes{
     width: 270px;
     background-color: #F5F4FA;
     padding: 25px 100px;
     margin-bottom: 30px;
 }
 
-.fetures-icon{
+.boxes__icon{
     width: 70px;
     height: 70px;  
 }
 /* Чим ми займаємося */
 
-.app-list{
+.apps{
     display: flex;
 }
 
-.app-item:not(:last-child){
+.apps__item:not(:last-child){
     margin-right: 30px;
 }
 
 
 /* Наша команда */
-.section.our-team{
+.section.team{
     background-color: #F5F4FA;
 }
 
-.team-list{
+.team__list{
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
 }
 
-.team-item{
+.team__item{
     flex-basis: calc((100% - 30px * 4) / 4);
     margin: 15px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -313,20 +315,20 @@ nav{
     height: 428px
 }
 
-.team-card{
+.team__card{
     padding: 30px 32px;
     text-align: center;
     background-color: var(--thirdly-text-color);
 }
 
-.name{
+.team__name{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
 }
 
-.position{
+.team__rank{
     font-size: 16px;
     line-height: 19px;
     color: var(--secondary-text-color);
@@ -337,11 +339,11 @@ nav{
     display: flex;
 }
 
-.networks-item:not(:last-child){
+.networks__item:not(:last-child){
     margin-right: 10px;
 }
 
-.networks-link{
+.networks__link{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -357,25 +359,25 @@ nav{
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.networks-link:hover,
-.networks-link:focus{
+.networks__link:hover,
+.networks__link:focus{
     background-color: var(--accent-color);
     color: var(--thirdly-text-color);
 }
 
-.networks-icon{
+.networks__icon{
     fill: currentColor;
 }
 /* Постійні клієнти */
-.customers-list{
+.customers{
     display: flex;
 }
 
-.customers-item:not(:last-child){
+.customers__item:not(:last-child){
     margin-right: 30px;
 }
 
-.customers-link{
+.customers__link{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -387,13 +389,13 @@ nav{
     border-radius: 4px;
 }
 
-.customers-link:hover,
-.customers-link:focus{
+.customers__link:hover,
+.customers__link:focus{
     border: 1px solid var(--accent-color);  
     color: var(--accent-color); 
 }
 
-.customers-icon{
+.customers__icon{
     fill: currentColor;
 }
 
@@ -403,12 +405,12 @@ nav{
     padding-bottom: 60px;
 }
 
-.footer-items{
+.footer__items{
  display: flex;
  align-items: baseline;
 }
 
-.footer .logo{
+.footer__logo{
     color: var(--thirdly-text-color);
     
 }
@@ -423,22 +425,22 @@ address{
     
 }
 
-.footer .contacts-list{
+.footer.contacts{
     display: block;
     margin-top: 9px;
 }
 
-.footer .contact-item:last-child{
+.footer.contacts__item:last-child{
    margin-left: 0;
    margin-top: 9px; 
 }
 
-.footer-contacts {
+.footer__contacts {
     margin-right: 70px;
   }
 
   /* Приєднуйтесь */
-.join-networks {
+.invite__networks {
     color: var(--thirdly-text-color);
     font-size: 14px;
     line-height: 1.2;
@@ -446,16 +448,16 @@ address{
     text-transform: uppercase;
   }
   
-  .footer .networks {
+  .footer.networks {
     margin-top: 20px;
   }
   
-  .join .networks-link {
+  .invite.networks__link {
     background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
     color: var(--thirdly-text-color);
   }
   
-  .join .social-icon {
+  .invite.social-icon {
     /* Наслідує колір від батьківського елементу
      в стані спокою та при ховері і фокусі */
     fill: currentColor;
@@ -594,7 +596,7 @@ address{
     border-bottom: 5px solid var(--card-border-line);
   }
 
-  .modalwindow{
+  .modal__window{
     width: 448px;
     height: 40px;
 
@@ -603,11 +605,11 @@ address{
     
     margin-bottom: 10px;
   }
-  .modalwindow:hover{
+  .modal__window:hover{
     border-color: #2196F3;
 
   }
-  .modaltext{
+  .modal__text{
     width: 22px;
     height: 14px;
 
@@ -623,11 +625,11 @@ address{
 
     margin-left: 40px;
 }
-.modalname{
+.modal__name{
     margin-top: 40px;
     margin-bottom: 12px;
 }
-.comtext{
+.modal__com{
     width: 448px;
     height: 120px;
 
@@ -636,7 +638,7 @@ address{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.modalagree{
+.modal__ok{
     position: absolute;
 
     left: 0;
@@ -645,13 +647,13 @@ address{
     margin-right: 8.38px;
     margin-left: 52px;
 }
-.agreetext{
+.modal__q{
     margin-top: 25px;
 }
 .argument{
     color: #2196F3;
 }
-.modalicons{
+.modal__icons{
     position: absolute;
 
     margin-top: 14px;
