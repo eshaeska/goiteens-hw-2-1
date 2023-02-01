@@ -1,0 +1,61 @@
+.section.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__items{
+ display: flex;
+ align-items: baseline;
+}
+
+.footer__logo{
+    color: var(--thirdly-text-color);
+    
+}
+
+address{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--thirdly-text-color);
+    margin-top: 20px;
+    
+}
+
+.footer.contacts{
+    display: block;
+    margin-top: 9px;
+}
+
+.footer.contacts__item:last-child{
+   margin-left: 0;
+   margin-top: 9px; 
+}
+
+.footer__contacts {
+    margin-right: 70px;
+  }
+
+  /* Приєднуйтесь */
+.invite__networks {
+    color: var(--thirdly-text-color);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .footer.networks {
+    margin-top: 20px;
+  }
+  
+  .invite.networks__link {
+    background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
+    color: var(--thirdly-text-color);
+  }
+  
+  .invite.social-icon {
+    /* Наслідує колір від батьківського елементу
+     в стані спокою та при ховері і фокусі */
+    fill: currentColor;}

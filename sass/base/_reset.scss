@@ -1,0 +1,43 @@
+:root{
+    --accent-color:#2196F3;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --thirdly-text-color: #FFFFFF;
+    --background-color: #2F303A;
+    --svg: rgba(175, 177, 184, 1);
+    --card-border-line: #EEEEEE;
+}
+/* Загальні стилі */
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  } 
